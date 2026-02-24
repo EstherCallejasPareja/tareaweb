@@ -1,0 +1,84 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+body {
+  background-color: #245a9a;
+  color: white;
+}
+
+.banda {
+  background-color: #f6b93b;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banda h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.volver {
+  text-decoration: none;
+  background-color: #1f4e8c;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+nav a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f6b93b;
+}
+
+
+.artistas {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.artist-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.artist-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.artist-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.artist-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .artists-container {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+}
